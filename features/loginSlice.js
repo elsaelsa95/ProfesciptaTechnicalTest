@@ -41,9 +41,6 @@ const loginSlice = createSlice({
   initialState: {
     username: "",
     password: "",
-    // grant_type: "client_credentials",
-    // client_id: "profes-api",
-    // client_secret: "P@ssw0rd",
   },
   reducers: {
     setLogin: (state, action) => {
@@ -54,14 +51,7 @@ const loginSlice = createSlice({
       client_secret = action.payload.client_secret;
     },
   },
-  // reducers: {},
-  // extraReducers: {
-  //   [login.fulfilled]: (state, action) => {
-  //     loginEntity.addOne(state, action.payload);
-  //   },
-  // },
 });
 
-// export const loginSelectors = loginEntity.getSelectors((state) => state.login);
 export const { setLogin } = loginSlice.actions;
 export default loginSlice.reducer;
