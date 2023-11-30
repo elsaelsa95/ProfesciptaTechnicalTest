@@ -7,3 +7,7 @@ export const setToken = (token) => {
 export const getToken = () => {
   return SecureStore.getItemAsync("access_token");
 };
+
+export const clearToken = () => {
+  return SecureStore.deleteItemAsync("access_token");
+};

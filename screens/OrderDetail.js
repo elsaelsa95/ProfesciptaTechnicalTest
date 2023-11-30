@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   Image,
   SafeAreaView,
@@ -13,7 +13,7 @@ import Form from "../components/Form";
 import Order from "../components/Order";
 import { Ionicons } from "@expo/vector-icons";
 
-export default function Home() {
+export default function OrderDetail() {
   return (
     <ScrollView>
       <SafeAreaView>
